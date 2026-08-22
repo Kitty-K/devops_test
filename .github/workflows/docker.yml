@@ -20,7 +20,7 @@ jobs:
           password: "3Mhnpv3yq3@doc"
 
       - name: Build Docker image
-        run: docker build -t "kz14" /myapp:${{ github.sha }} .
+        run: docker build -t kz14/myapp:${{ github.sha }} .
 
       - name: Push Docker image
-        run: docker push "kz14" /myapp:${{ github.sha }}
+        run: docker push kz14/myapp:${{ github.sha }}
