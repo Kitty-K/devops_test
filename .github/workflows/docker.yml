@@ -21,10 +21,10 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build \
+          docker build 
             -t "kz14" /myapp:${{ github.sha }} .
 
       - name: Push Docker image
         run: |
-          docker push \
+          docker push 
             "kz14" /myapp:${{ github.sha }}
