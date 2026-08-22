@@ -26,4 +26,4 @@ jobs:
         run: docker push kz14/myapp:${{ github.sha }}
 
       - name: Build Docker image
-        run: docker build -t kz14/myapp:${{ github.sha }} -f week-3/day-3/Dockerfile week-3/day-3/
+        run: docker build -t kz14/myapp:${{ github.sha }} -f docker-pipeline/dockerfile docker-pipeline/
